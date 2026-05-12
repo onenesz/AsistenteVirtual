@@ -1,0 +1,26 @@
+# ─── Núcleo / Utilidades ───────────────────────────────
+python-dotenv ==1.0.1          # Variables de entorno (.env) para API keys
+pydantic==2.9.2               # Validación de configuración con tipado estricto
+loguru==0.7.2                 # Logging elegante y sin boilerplate
+
+# ─── Audio: Salida (TTS) ───────────────────────────────
+edge-tts==6.1.14              # Voz de Microsoft Edge (gratuita y de alta calidad)
+
+# ─── Audio: Entrada (STT) ──────────────────────────────
+SpeechRecognition==3.10.4     # Wrapper sobre múltiples motores STT
+PyAudio==0.2.14               # Captura de audio del micrófono
+# openai-whisper==20231117    # (Futura iteración) STT local
+# faster-whisper==1.0.3       # (Alternativa optimizada con CTranslate2)
+
+# ─── Cerebro (LLM) ─────────────────────────────────────
+google-generativeai==0.8.3    # API de Gemini
+
+# ─── Integración Google Calendar ───────────────────────
+google-api-python-client==2.149.0
+google-auth-httplib2==0.2.0
+google-auth-oauthlib==1.2.1
+
+# ─── Desarrollo / Calidad de código ────────────────────
+black==24.10.0                # Formateador
+ruff==0.7.1                   # Linter ultrarrápido
+mypy==1.13.0                  # Verificación estática de tipos
